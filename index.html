@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Galaktyczna Mapa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Duży tytuł -->
+  <div class="galaxy-title">MAPA GALAKTYKI</div>
+
+  <!-- Panel sterowania -->
+  <div class="controls">
+    <label>
+      <input type="checkbox" id="toggleOverlay"> Strefy wpływów
+    </label>
+  </div>
+
+  <!-- Mapa -->
+  <div class="map-container">
+    <img src="galaxy.jpg" alt="Mapa galaktyki" class="galaxy-map">
+
+    <!-- Planety z 21 BBY -->
+    <div class="planet-box" style="top: 10%; left: 41%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/Mygeeto.png" alt="Mygeeto" class="planet-img">
+      <a href="planety/Mygeeto.html" class="planet">Mygeeto</a>
+    </div>
+
+    <div class="planet-box" style="top: 30%; left: 45%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/coruscant.png" alt="Coruscant" class="planet-img">
+      <a href="planety/coruscant.html" class="planet">Coruscant</a>
+    </div>
+
+    <div class="planet-box" style="top: 43%; left: 55%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/Alderaan.png" alt="Alderaan" class="planet-img">
+      <a href="planety/Alderaan.html" class="planet">Alderaan</a>
+    </div>
+
+    <div class="planet-box" style="top: 55%; left: 40%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/Abregado.png" alt="Abregado" class="planet-img">
+      <a href="planety/Abregado.html" class="planet">Abregado</a>
+    </div>
+
+    <div class="planet-box" style="top: 28%; left: 52%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/anaxes.png" alt="Anaxes" class="planet-img-small">
+      <a href="planety/Anaxes.html" class="planet">Anaxes</a>
+    </div>
+
+    <div class="planet-box" style="top: 65%; left: 50%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/naboo.png" alt="Naboo" class="planet-img">
+      <a href="planety/Naboo.html" class="planet">Naboo</a>
+    </div>
+
+    <div class="planet-box" style="top: 85%; left: 45%;" data-control="partial">
+      <div class="influence-zone partial"></div>
+      <img src="ikony/Utapau.png" alt="Utapau" class="planet-img">
+      <a href="planety/Utapau.html" class="planet">Utapau</a>
+    </div>
+
+    <div class="planet-box" style="top: 80%; left: 35%;" data-control="cis">
+      <div class="influence-zone cis"></div>
+      <img src="ikony/Mustafar.png" alt="Mustafar" class="planet-img">
+      <a href="planety/Mustafar.html" class="planet">Mustafar</a>
+    </div>
+
+    <div class="planet-box" style="top: 70%; left: 28%;" data-control="neutral">
+      <div class="influence-zone neutral"></div>
+      <img src="ikony/Hoth.png" alt="Hoth" class="planet-img">
+      <a href="planety/Hoth.html" class="planet">Hoth</a>
+    </div>
+
+    <div class="planet-box" style="top: 60%; left: 20%;" data-control="neutral">
+      <div class="influence-zone neutral"></div>
+      <img src="ikony/Batuu.png" alt="Batuu" class="planet-img">
+      <a href="planety/Batuu.html" class="planet">Batuu</a>
+    </div>
+
+    <div class="planet-box" style="top: 50%; left: 15%;" data-control="neutral">
+      <div class="influence-zone neutral"></div>
+      <img src="ikony/Endor.png" alt="Endor" class="planet-img">
+      <a href="planety/Endor.html" class="planet">Endor</a>
+    </div>
+
+    <div class="planet-box" style="top: 40%; left: 20%;" data-control="neutral">
+      <div class="influence-zone neutral"></div>
+      <img src="ikony/Jakku.png" alt="Jakku" class="planet-img">
+      <a href="planety/Jakku.html" class="planet">Jakku</a>
+    </div>
+
+    <div class="planet-box" style="top: 65%; left: 68%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/tatooine.png" alt="Tatooine" class="planet-img">
+      <a href="planety/tatooine.html" class="planet">Tatooine</a>
+    </div>
+
+    <div class="planet-box" style="top: 75%; left: 58%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/Christophsis.png" alt="Christophsis" class="planet-img">
+      <a href="planety/Christophsis.html" class="planet">Christophsis</a>
+    </div>
+
+    <div class="planet-box" style="top: 45%; left: 70%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/Kashyyyk.png" alt="Kashyyyk" class="planet-img">
+      <a href="planety/Kashyyyk.html" class="planet">Kashyyyk</a>
+    </div>
+
+    <div class="planet-box" style="top: 38%; left: 63%;" data-control="partial">
+      <div class="influence-zone partial"></div>
+      <img src="ikony/Umbara.png" alt="Umbara" class="planet-img">
+      <a href="planety/Umbara.html" class="planet">Umbara</a>
+    </div>
+
+    <div class="planet-box" style="top: 87%; left: 65%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/Orto_Plutonia.png" alt="Orto Plutonia" class="planet-img">
+      <a href="planety/Orto_plutonia.html" class="planet-long">Orto Plutonia</a>
+    </div>
+
+    <div class="planet-box" style="top: 20%; left: 60%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/OnderonTVE.png" alt="Onderon" class="planet-img">
+      <a href="planety/Onderon.html" class="planet">Onderon</a>
+    </div>
+
+    <div class="planet-box" style="top: 25%; left: 75%;" data-control="neutral">
+      <div class="influence-zone neutral"></div>
+      <img src="ikony/Mandalore.png" alt="Mandalore" class="planet-img">
+      <a href="planety/Mandalore.html" class="planet">Mandalore</a>
+    </div>
+
+    <div class="planet-box" style="top: 25%; left: 85%;" data-control="partial">
+      <div class="influence-zone partial"></div>
+      <img src="ikony/Vanqor.png" alt="Vanqor" class="planet-img">
+      <a href="planety/Vanqor.html" class="planet">Vanqor</a>
+    </div>
+
+    <div class="planet-box" style="top: 40%; left: 90%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/felucia.png" alt="Felucia" class="planet-img">
+      <a href="planety/Felucia.html" class="planet">Felucia</a>
+    </div>
+
+    <div class="planet-box" style="top: 50%; left: 80%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/Kamino.png" alt="Kamino" class="planet-img">
+      <a href="planety/Kamino.html" class="planet">Kamino</a>
+    </div>
+
+    <div class="planet-box" style="top: 70%; left: 75%;" data-control="cis">
+      <div class="influence-zone cis"></div>
+      <img src="ikony/Geonosis.png" alt="Geonosis" class="planet-img">
+      <a href="planety/Geonosis.html" class="planet">Geonosis</a>
+    </div>
+
+    <div class="planet-box" style="top: 65%; left: 85%;" data-control="republic">
+      <div class="influence-zone republic"></div>
+      <img src="ikony/RishiPlanet.png" alt="Rishi" class="planet-img">
+      <a href="planety/Rishi.html" class="planet">Rishi</a>
+    </div>
+
+    <div class="planet-box" style="top: 22%; left: 32%;" data-control="neutral">
+      <div class="influence-zone neutral"></div>
+      <img src="ikony/Ilum.png" alt="Ilum" class="planet-img">
+      <a href="planety/Ilum.html" class="planet">Ilum</a>
+    </div>
+
+    <div class="planet-box" style="top: 88%; left: 78%;" data-control="partial">
+      <div class="influence-zone partial"></div>
+      <img src="ikony/Ryloth.png" alt="Ryloth" class="planet-img">
+      <a href="planety/Ryloth.html" class="planet">Ryloth</a>
+    </div>
+
+  </div>
+
+  <!-- Legenda -->
+  <div class="legend" id="legend">
+    <div>
+      <span class="legend-box republic"></span> 
+      <img src="republic.png" alt="Republika" class="legend-icon"> 
+      <strong>Republika</strong>
+    </div>
+    <div>
+      <span class="legend-box cis"></span> 
+      <img src="cis.png" alt="CIS" class="legend-icon"> 
+      <strong>Konfederacja (CIS)</strong>
+    </div>
+    <div>
+      <span class="legend-box partial"></span>
+         <img src="partial.png" alt="partial" class="legend-icon"> 
+      <strong>Częściowa kontrola</strong>
+    </div>
+    <div>
+      <span class="legend-box neutral"></span>
+       <img src="neutral.png" alt="neutral" class="legend-icon">  
+      <strong>Neutralne</strong>
+    </div>
+  </div>
+
+  <script src="skrypt.js"></script>
+</body>
+</html>

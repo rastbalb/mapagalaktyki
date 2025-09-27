@@ -1,0 +1,176 @@
+/* Reset i tło */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.galaxy-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Duży napis na górze */
+.galaxy-title {
+  position: fixed;
+  top: 1px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: 'Star Jedi', Arial, sans-serif; 
+  z-index: 1000;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Kontener mapy */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Boxy planet */
+.planet-box {
+  position: absolute;
+  text-align: center;
+  transform: translate(-40%, -30%);
+  z-index: 10;
+}
+
+/* Zdjęcia planet */
+.planet-img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.planet-img-small {
+  display: block;
+  margin-left: 15px;
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Nazwy planet */
+.planet {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2px 4px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 12px;
+  margin-top: 5px;
+  font-size: 10px;
+  width: 60px;
+  height: 10px;
+  margin-left: 18px;
+}
+
+.planet-long {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2px 4px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 12px;
+  margin-top: 5px;
+  font-size: 10px;
+  width: 50px;
+  height: 20px;
+  margin-left: 18px;
+}
+
+.planet:hover, .planet-long:hover {
+  background: rgba(255,255,255,0.8);
+  color: black;
+}
+
+/* Strefy wpływów */
+.influence-zone {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+  animation: pulse-glow 2s infinite;
+  filter: drop-shadow(0 0 15px rgba(255,255,255,0.3));
+}
+
+/* Mniejsze strefy dla planet-img-small */
+.planet-box .planet-img-small + .influence-zone {
+  width: 90px;
+  height: 90px;
+}
+
+.influence-zone.republic { 
+  background: linear-gradient(135deg, rgba(0,0,255,0.5), rgba(0,0,255,0.1));
+  filter: drop-shadow(0 0 25px rgba(0,0,255,0.6));
+}
+
+.influence-zone.cis { 
+  background: linear-gradient(135deg, rgba(255,0,0,0.5), rgba(255,0,0,0.1));
+  filter: drop-shadow(0 0 25px rgba(255,0,0,0.6));
+}
+
+.influence-zone.neutral { 
+  background: linear-gradient(135deg, rgba(0,255,0,0.5), rgba(0,255,0,0.1));
+  filter: drop-shadow(0 0 25px rgba(0,255,0,0.6));
+}
+
+.influence-zone.partial { 
+  background: linear-gradient(135deg, rgba(255,255,0,0.5), rgba(255,255,0,0.1));
+  filter: drop-shadow(0 0 25px rgba(255,255,0,0.6));
+}
+
+@keyframes pulse-glow {
+  0% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.07); }
+  100% { opacity: 0.2; transform: scale(1); }
+}
+
+/* Panel sterowania */
+.controls {
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  padding: 10px 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 18px;
+}
+
+/* Legenda */
+.legend {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.7);
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 22px;
+}
+
+.legend div { margin-bottom: 18px; }
+
+.legend-box { display: inline-block; width: 25px; height: 25px; margin-right: 10px; vertical-align: middle; }
+.legend-icon { width: 40px; height: 40px; vertical-align: middle; margin: 0 10px; }
